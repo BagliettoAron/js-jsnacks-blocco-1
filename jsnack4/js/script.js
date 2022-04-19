@@ -11,6 +11,13 @@ let oneNumber = userNumber.split("")
 console.log("numeri presi singolarmente", oneNumber);
 
 // sommo ogni numero prelevato
+let oneNumberSum ="0";
 
-let oneNumberSum = Number(oneNumber[0]) + Number(oneNumber[1]) + Number(oneNumber[2]) + Number(oneNumber[3])
+for (let i = 0; i <= 4; i++) {
+    oneNumberSum = oneNumber =+ oneNumber[i];
+}
+
 console.log("somma di tutti i numeri", oneNumberSum);
+
+// let oneNumberSum = Number(oneNumber[0]) + Number(oneNumber[1]) + Number(oneNumber[2]) + Number(oneNumber[3])
+// console.log("somma di tutti i numeri", oneNumberSum);
