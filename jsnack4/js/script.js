@@ -3,21 +3,17 @@
 
 // chiedo un numero di 4 cifre all'utente
 
-const userNumber = prompt(parseInt("digita 4 cifre"))
+const userNumber = prompt("digita 4 cifre");
 console.log("numeri inseriti", userNumber);
 
-// prelevo ogni singolo numero
-let oneNumber = userNumber.split("")
-console.log("numeri presi singolarmente", oneNumber);
 
 // sommo ogni numero prelevato
-let oneNumberSum ="0";
+let oneNumberSum = 0;
 
-for (let i = 0; i <= 4; i++) {
-    oneNumberSum = oneNumber =+ oneNumber[i];
+for (let i = 0; i < userNumber.length; i++) {
+    const thisNumber = parseInt(userNumber [i])
+    oneNumberSum += thisNumber;
 }
 
-console.log("somma di tutti i numeri", oneNumberSum);
+console.log(oneNumberSum);
 
-// let oneNumberSum = Number(oneNumber[0]) + Number(oneNumber[1]) + Number(oneNumber[2]) + Number(oneNumber[3])
-// console.log("somma di tutti i numeri", oneNumberSum);
